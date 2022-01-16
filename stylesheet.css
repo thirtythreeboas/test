@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poiret One', cursive;
+}
+
+html {
+  background-color: #5a5a6f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  /* height: 400px; */
+  margin-top: 60px;
+  background-color: #f5f7f8;
+  border: 1px solid #d2d9df;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+.job-application {
+  width: 100%;
+  padding: 30px;
+}
+
+.employer {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  width: 60px;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.info span img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.mail {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: cursive;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+a {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.description {
+  padding: 30px;
+  text-align: justify;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  max-height: 400px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  background-color: #5a5a6f;
+  border: 1px solid #f5f7f8;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: 600;
+  color: #000;
+  background-color: #f5f7f8;
+  border: 1px solid #5a5a6f;
+  font-family: 'Poiret One', cursive;
+}
+
+.reset {
+  width: 100px;
+
+}

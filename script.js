@@ -1,13 +1,3 @@
-const disappear = () => {
-  if (button.style.display !== 'none') {
-    button.style.display = 'none';
-  } else {
-    button.style.display = 'flex';
-  }
-}
-
-window.onkeydown = disappear;
-
 let button = document.getElementById('button');
 
 const handleClick = param => {
@@ -18,8 +8,26 @@ const handleClick = param => {
   button.addEventListener('mouseout', mouseOut);
 };
 
-const reset = () => {
+// const reset = () => {
+//   button.style.color = '#fff';
+//   button.style.display = 'flex';
+//   handleClick('reset');
+// }
+
+window.onkeydown = function(e) {
+  if (e.keyCode == 32) {
+    if (button.style.display !== 'none') {
+      button.style.display = 'none';
+    } else {
+      button.style.display = 'flex';
+    }
+  }
+}
+
+window.onkeyup = function(e) {
+  if (e.keyCode == 13) {
     button.style.color = '#fff';
     button.style.display = 'flex';
     handleClick('reset');
+  }
 }

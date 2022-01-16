@@ -5,37 +5,41 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poiret+One&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <title>Junior Frontend Developer</title>
   </head>
   <body>
     <div class="container">
       <div class="job-application">
-        <h1>Начинающий web-программист / Junior Frontend Developer</h1>
+        <div class="button-div">
+          <button id="button" onclick="handleClick()">
+            <h4>Начинающий web-программист / Junior Frontend Developer</h4>
+            <p>Ермаков Дмитрий Андреевич</p>
+          </button>
+        </div>
         <div class="content">
           <div class="employer">
             <img src="https://hhcdn.ru/employer-logo/3540128.png" alt="Radium">
             <h2>Радиум</h2>
           </div>
           <div class="info">
-            <p>Ермаков Дмитрий Андреевич</p>
+            <p>Contact me at...</p><br>
             <a disabled="disabled" name="tkdmeow@gmail.com">
               <span><img src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" alt="gmail"></span>Mail me at <span class="mail">tkdmeow@gmail.com</span>
-            </a>
+            </a><br>
             <a href="https://vk.com/id221194315">
               <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png" alt="vk"></span>Text me here
-            </a>
+            </a><br>
             <a href="https://github.com/thirtythreeboas/store">
               <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="git"></span>My pet-project
             </a>
           </div>
         </div>
       </div>
-      <p class="description">Нажмите пробел, чтобы удалить кнопку со страницы. <br> Нажмите пробел ещё раз, чтобы её вернуть. <br> Нажмите <b>Enter</b>, чтобы вернуться к изначальному состоянию.</p>
-      <div class="button-div">
-        <button id="button" onclick="handleClick()">Hover Over Me</button>
-      </div>
+      <p class="description">Нажмите пробел, чтобы удалить кнопку со страницы. <br> Нажмите пробел ещё раз, чтобы её вернуть. <br> Нажмите <b>Enter</b>, чтобы вернуться к изначальному состоянию<button class="reset" onclick="reset()">Enter</button></p>
     </div>
+
+    
     <script src="script.js"></script>
   </body>
 </html>

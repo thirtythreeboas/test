@@ -8,11 +8,12 @@ const handleClick = param => {
   button.addEventListener('mouseout', mouseOut);
 };
 
-// const reset = () => {
-//   button.style.color = '#fff';
-//   button.style.display = 'flex';
-//   handleClick('reset');
-// }
+const reset = () => {
+  button.style.color = '#fff';
+  button.style.display = 'flex';
+  button.focus();
+  handleClick('reset');
+}
 
 window.onkeydown = function(e) {
   if (e.keyCode == 32) {
@@ -21,13 +22,5 @@ window.onkeydown = function(e) {
     } else {
       button.style.display = 'flex';
     }
-  }
-}
-
-window.onkeyup = function(e) {
-  if (e.keyCode == 13) {
-    button.style.color = '#fff';
-    button.style.display = 'flex';
-    handleClick('reset');
   }
 }
